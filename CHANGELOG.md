@@ -1,27 +1,51 @@
 # QuietBar Changelog
 
-## Unreleased — Public Beta Preparation
+## 1.0 build 6 - Release Candidate
 
 ### Added
 
-- One-click menu bar reveal and compact behavior.
-- Chinese and English interface switching.
-- Accessibility-based menu bar item names and application icons.
-- First-run setup guidance.
-- Launch-at-login control.
-- Configurable 5, 15, 30, or 60 second auto-compact delay.
-- `Control-Option-Q` global reveal shortcut.
-- Live menu bar item refresh.
-- Public privacy and support documentation.
+- One-click reveal and compact behavior for menu bar items.
+- Application name and icon recognition with optional Accessibility access.
+- Duplicate application-item grouping and live refresh.
+- First-run setup guidance and settings panel.
+- Launch-at-login support.
+- Configurable automatic compact delay.
+- `Control-Option-Q` global shortcut.
+- English and Simplified Chinese interfaces.
+- App Sandbox configuration for Mac App Store distribution.
+- Product website, interactive browser demonstration, App Preview, privacy
+  policy, support documentation, and localized store screenshots.
+
+### Fixed
+
+- Accessibility permission state now follows the result returned by the actual
+  background scan instead of a stale UI-thread value.
+- Inherited duplicate items are omitted when a directly recognized item for the
+  same application is available.
+- The Mac App Store configuration includes the Accessibility sandbox
+  entitlement required for local app-name and icon scanning.
+- Chinese product copy consistently uses the name 悄悄吧.
+- Store screenshots show the correct product name and build number.
 
 ### Verified
 
-- 21 unit tests pass.
-- Guided-settings UI smoke test passes.
-- Ad-hoc Release configuration builds successfully on Apple silicon.
+- 24 unit tests pass.
+- The signed build 6 archive contains both App Sandbox and Accessibility
+  entitlements.
+- The archive contains Apple silicon and Intel architectures.
+- The final app bundle excludes obsolete brand candidates and generated build
+  artifacts.
 
-### Pending before download
+### Pending Before Public Availability
 
-- Developer ID Application signing.
-- Apple notarization and Gatekeeper validation.
-- Multi-display, notch, full-screen space, sleep/wake, and login-start user testing.
+- Install and exercise the archived Sandbox build with Accessibility disabled,
+  newly granted, and revoked.
+- Complete full-screen, notch, multi-display, login-start, and older macOS
+  runtime checks.
+- Upload build 6 and complete App Store review submission.
+
+## 1.0 build 5 - Superseded
+
+Build 5 was uploaded to App Store Connect on July 23, 2026. It was superseded
+before review submission by build 6, which adds the required Sandbox
+Accessibility entitlement.
