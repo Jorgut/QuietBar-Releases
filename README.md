@@ -13,9 +13,8 @@ then reveal or compact them with one click.
 
 > **Release status**
 >
-> QuietBar 1.0 build 6 is the current Mac App Store release candidate. No
-> public binary is attached yet. Download QuietBar only from this repository or
-> the Mac App Store after an official release is published.
+> QuietBar 1.0 build 6 is publicly available as a notarized Developer ID
+> download. The Mac App Store Sandbox build remains a separate submission.
 
 ## Why QuietBar
 
@@ -83,10 +82,12 @@ SDKs. See [PRIVACY.md](PRIVACY.md) for the complete policy.
 
 ## Downloads
 
-There is currently no official downloadable build. A GitHub Release will be
-published only after the package has the appropriate Apple signing,
-notarization, and Gatekeeper validation. The Mac App Store release will be
-linked here after it becomes publicly available.
+Download the notarized Developer ID build from the
+[QuietBar 1.0 build 6 Release](https://github.com/Jorgut/QuietBar-Releases/releases/tag/v1.0-build6).
+The release includes `QuietBar-1.0-build6.zip` and its SHA-256 checksum.
+
+The Mac App Store Sandbox build is a separate submission and will be linked
+after Apple review and public availability.
 
 ## Source and License
 

@@ -36,7 +36,13 @@
 - The final app bundle excludes obsolete brand candidates and generated build
   artifacts.
 
-### Pending Before Public Availability
+### Public Availability
+
+- The notarized Developer ID package is available in the
+  [v1.0-build6 GitHub Release](https://github.com/Jorgut/QuietBar-Releases/releases/tag/v1.0-build6).
+- SHA-256 verification is provided as `SHA256SUMS.txt` in the release.
+
+### Pending for Mac App Store Availability
 
 - Install and exercise the archived Sandbox build with Accessibility disabled,
   newly granted, and revoked.
