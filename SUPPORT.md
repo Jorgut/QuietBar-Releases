@@ -1,44 +1,66 @@
 # QuietBar Support
 
-## 菜单栏图标没有出现
+## The QuietBar Icon Does Not Appear
 
-1. 确认 QuietBar 正在运行。
-2. 打开 **系统设置 → 菜单栏**，确认系统允许显示 QuietBar。
-3. 退出并重新启动 QuietBar。
-4. 如果问题仍然存在，请附上 macOS 版本、Mac 型号和菜单栏截图提交 Issue。
+1. Confirm QuietBar is running.
+2. Open **System Settings > Control Center > Menu Bar Only** and verify macOS
+   allows QuietBar to appear.
+3. Quit and reopen QuietBar.
+4. If the problem continues, include your macOS version, Mac model, and a
+   privacy-safe screenshot in a GitHub Issue.
 
-## 图标没有被收起
+## Items Do Not Compact
 
-先展开 QuietBar，按住 `Command`，再把需要收起的图标拖到 QuietBar 分隔线左侧。macOS 的时钟等固定系统项目会保持可见。
+Reveal QuietBar first. Hold `Command`, then drag the items you want to compact
+to the left of the QuietBar divider. Fixed system items such as the clock remain
+visible.
 
-## 只能看到数量，看不到名称或程序图标
+## Names or Application Icons Are Missing
 
-打开 **系统设置 → 隐私与安全性 → 辅助功能** 并启用 QuietBar，然后返回应用点击刷新。如果已经启用但仍无效，可以移除 QuietBar、重新添加并重启应用。
+Open **System Settings > Privacy & Security > Accessibility** and enable
+QuietBar, then return to QuietBar and refresh.
 
-基础展开与收起不依赖名称识别，因此即使不授予该权限也可以继续使用。
+If QuietBar was already enabled:
 
-## 全局快捷键没有反应
+1. Disable or remove QuietBar from the Accessibility list.
+2. Quit QuietBar.
+3. Reopen it and grant access again.
+4. Refresh the panel.
 
-确认 QuietBar 设置中的“全局快捷键”已启用，然后按 `Control-Option-Q`（`⌃⌥Q`）。如果其他应用占用了同一组合键，请在反馈中注明冲突应用。
+Some system helpers and third-party apps do not provide enough metadata for a
+stable name or icon. QuietBar may show a fallback icon or omit an unstable
+duplicate. Basic reveal and compact behavior does not require this metadata.
 
-## 登录启动没有生效
+## The Global Shortcut Does Not Work
 
-打开 **系统设置 → 通用 → 登录项与扩展**，确认 QuietBar 已被允许在登录时打开。系统有时会要求用户在此处进行二次确认。
+Confirm the global shortcut is enabled in QuietBar settings, then press
+`Control-Option-Q` (`⌃⌥Q`). If another app uses the same shortcut, mention that
+app in your report.
 
-## 临时恢复全部菜单栏项目
+## Launch at Login Does Not Work
 
-退出 QuietBar。QuietBar 创建的分隔区域会被系统移除，不会继续占用菜单栏空间。
+Open **System Settings > General > Login Items & Extensions** and confirm
+QuietBar is allowed to open at login. macOS may require a second confirmation
+there.
 
-## 提交问题
+## Restore the Full Menu Bar Temporarily
 
-请在本仓库创建 GitHub Issue，并尽量提供：
+Quit QuietBar. Its divider is removed by macOS, so it no longer occupies menu
+bar space.
 
-- QuietBar 版本和构建号。
-- macOS 完整版本。
-- Mac 型号、处理器和显示器数量。
-- 是否使用刘海屏、全屏空间或外接显示器。
-- 可复现步骤、预期结果和实际结果。
-- 不包含私人信息的截图或录屏。
+## Reporting a Problem
 
-请不要上传密码、私密通知内容或其他敏感信息。
+Create a GitHub Issue and include:
 
+- QuietBar version and build number;
+- full macOS version;
+- Mac model and processor;
+- number and arrangement of displays;
+- whether a notch or full-screen Space is involved;
+- reproducible steps, expected result, and actual result;
+- screenshots or recordings with private content removed.
+
+Do not upload passwords, private notifications, personal documents, crash logs
+containing private paths, or other sensitive information.
+
+For privacy or store questions, email [honaler@gmail.com](mailto:honaler@gmail.com).
